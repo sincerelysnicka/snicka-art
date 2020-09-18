@@ -33,11 +33,6 @@ img + p {
   padding: 0.7em;
 }
 
-/* .i {
-    color: firebrick;
-    position: relative;
-} */
-
 .navbar-brand {
     font-size: 1.0em;
     font-weight: 700;
@@ -46,10 +41,6 @@ img + p {
 .menu-item {
     font-size: 0.6em;
     font-weight: 400;
-}
-
-.slide-row {
-    margin: 100px;
 }
 
 :root {
