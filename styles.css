@@ -43,6 +43,10 @@ img + p {
     font-weight: 400;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 :root {
   --bootstrap-sm: 576px;
   --bootstrap-md: 768px;
