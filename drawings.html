@@ -1,6 +1,6 @@
 <html> 
   <head>
-    <title>snicka | about</title>
+    <title>snicka | drawings</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="styles.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -18,38 +18,73 @@
       <button class="btn navbar-toggler" type="button" data-toggle="dropdown" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
         <a class="dropdown-item" href="prints.html" class="nav-item nav-link menu-item">prints</a>
         <a class="dropdown-item" href="murals.html" class="nav-item nav-link menu-item">murals</a>
         <a class="dropdown-item" href="paper.html" class="nav-item nav-link menu-item">paper</a>
+        <a class="dropdown-item" href="#" class="nav-item nav-link menu-item">drawings</a>
         <a class="dropdown-item" href="sketchbook.html" class="nav-item nav-link menu-item">sketchbook</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="bio.html" class="nav-item nav-link">bio</a>
-        <a class="dropdown-item" href="#" class="nav-item nav-link">statement</a>
+        <a class="dropdown-item" href="statement.html" class="nav-item nav-link">statement</a>
         <a class="dropdown-item" target="_blank" href="snicka.cv.pdf" class="nav-item nav-link menu-item">cv</a>
         <a class="dropdown-item" href="contact.html" class="nav-item nav-link menu-item">contact</a>
         <a class="dropdown-item" target="_blank" href="https://www.etsy.com/shop/snickashop" class="nav-item nav-link menu-item">shop</a>
       </div>
     </nav>
 
-<!--
-  Include artist's bio and artist's statement
-    <div 
--->
-    <div class="pt-3">
-      <h3 class="text-center font-weight-bold">artist statement</h3>
+    <div class="container-fluid" id="gallery" data-toggle="modal" data-target="#exampleModal">
+
+      <div class="row">
+        <div class="col"></div>
+
+        <div class="col-md">
+
+          <img src="img/drawing001.png" class="d-block mw-100 cursor-pointer" data-target="#carouselExample" data-slide-to="0">
+
+        </div>
+
+        <div class="col"></div>
+      </div>
     </div>
-    
-    <div class="row">
-      <div class="col-sm-8 mx-auto">
-        <p class="lead">
-          It is telling that we don’t have a word for it, the things we give up in our perpetual struggle against entropy. In the name of progress, we remodel and reinvent to push back against the dilapidation and decay, but something is irrevocably lost in the process. Flowers from the garden my mother tended, a historic brick building entombed in cinder block, cherished belongings abandoned on a thrift-store shelf—as their stories fade from our memory, it is almost like they never even existed.
-        </p>
-        <p class="lead">
-          As a printmaker, papermaker, and muralist, my work explores and attempts to understand this nameless loss. I am inspired by the deterioration of once-pristine spaces and imagery from bygone eras, things that remind me of the precious but fleeting immediacy of now. I work quickly to capture it, sacrificing perfection for sincerity. In my printmaking, I often employ reduction cuts, a technique that destroys the block as I print each layer. Not only is it thrilling to work under this sort of creative pressure, but the process itself mimics the irreversibility that so often accompanies change. 
-        <p class="lead">
-          There is no going back.
-        </p>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block mw-100" src="img/drawing001.png">
+                  <p class="font-weight-bold">untitled</p>
+                  <p class="font-weight-light">2011</p>
+                  <p class="font-weight-light">charcoal on paper</p>
+                  <p class="font-weight-light">56.5cm x 76cm</p>
+                </div>
+              </div>
+
+              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+
+              <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
