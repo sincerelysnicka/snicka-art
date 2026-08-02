@@ -1,8 +1,12 @@
 body {
-  background-color:white; 
+  background-color:ivory; 
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-size: calc(.85em + 1vw);
+}
+
+.front-page-body {
+  background-color: rgb(223, 234, 240)
 }
 
 .carousel-control-prev-icon {
@@ -14,6 +18,10 @@ body {
 }
 
 .row {
+  padding: 20px 40px;
+}
+
+.home-row {
   padding: 20px 40px;
 }
 
@@ -36,6 +44,7 @@ img + p {
 .navbar-brand {
     font-size: 1.0em;
     font-weight: 700;
+    color: rgb(187, 176, 100) !important;
 }
 
 .menu-item {
@@ -75,6 +84,15 @@ img + p {
 .navbar-collapse {
   min-width: 300px;
 }
+
+.custom-navbar {
+/*  background-color: rgb(61, 61, 59); */
+  background-color: ivory;
+}
+
+.custom-navbar-ivory {
+  background-color: ivory;
+}
 .carousel-inner img {
   margin: auto;
 }
@@ -95,4 +113,103 @@ img + p {
   background-color: white;
   text-align: center;
   font-size: 0.35em;
+}
+
+.gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 95vh;
+  scroll-snap-type: x mandatory;
+}
+.gallery-scroll img {
+  height: 100%;
+  width: auto;
+  flex-shrink: 0;
+  padding: 2rem 1rem;
+  scroll-snap-align: start;
+  object-fit: contain;
+}
+
+.statement-panel {
+  height: 100%;
+  width: 30vw;              /* pick a width that feels right; not tied to image aspect ratio like the photos are */
+  max-width: 450px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertically centers the text in the panel */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;          /* in case the statement is long and the viewport is short */
+  font-size: 0.8em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+
+.series-tile {
+  display: block;
+  position: relative;
+  overflow: hidden;      /* clips the zoomed image so it doesn't spill past the tile edges */
+}
+
+.series-tile img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.series-tile:hover img {
+  transform: scale(1.05);   /* the "just a little" zoom — tune this value to taste */
+}
+
+.series-tile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.series-tile-title {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.scroll-item {
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.scroll-item img {
+  flex: 1 1 auto;       /* image takes up all available space, not a fixed height */
+  min-height: 0;        /* Flexbox quirk fix, explained below */
+  width: auto;
+  object-fit: contain;
+  padding: 2rem 1rem 0; 
+}
+
+.scroll-caption {
+  flex-shrink: 0;        /* caption keeps its natural height, doesn't get squeezed */
+  text-align: left;
+  padding: 0.75rem 2em;
+  font-size: 0.5em;
+  line-height: 1.4;
+}
+
+.scroll-caption p {
+  margin: 0;
+}
+
+.jumbotron {
+  background-color: ivory;
 }
