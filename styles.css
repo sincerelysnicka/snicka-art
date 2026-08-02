@@ -213,3 +213,32 @@ img + p {
 .jumbotron {
   background-color: ivory;
 }
+
+@media (max-width: 767px) {
+  .gallery-scroll {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    scroll-snap-type: y proximity;   /* optional: snaps vertically instead of horizontally */
+  }
+
+  .scroll-item {
+    width: 100%;
+    height: auto;
+    align-items: center;         /* re-center on mobile; drop this if you want left-aligned captions to stay left */
+  }
+
+  .scroll-item img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;             /* keeps a single photo from taking the whole screen height */
+  }
+
+  .statement-panel {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
+}
